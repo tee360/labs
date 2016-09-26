@@ -1,0 +1,36 @@
+body {
+	background-color: #a3d5d3;
+}
+
+h1 {
+	color: #000000;
+	text-align: center;
+}
+
+p.intro {
+	font-style: italic;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+p.hometown {
+    background-color: #80ff00;
+}
+
+#firstname { 
+    background-color: #808000;
+}
+
+p {
+	color: red;
+	font-weight: bold;
+}
+
+#firstname { 
+    background-color: yellow;
+}
+
+div + p {
+    background-color: black;
+}

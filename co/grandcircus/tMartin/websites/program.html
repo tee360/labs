@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Java</title>	
+		<link href="main.css" rel="stylesheet" />
+		<link href="index.html" rel="homepage" />
+	</head>
+	<body>
+		<p class="intro">Java Glossary</p>
+		<p><a href="index.html">Home</a></p>
+		<pre><b>Identifier</b> - anytime when you get to name something (class, variable, etc.)
+has to start with a letter, dollar sign, or underscore, and then it can be followed by anything
+
+<b>Keywords</b> - Reserved words with predefined meanings
+
+Whitespace characters - include space, tab, newline (carriage return)
+
+Token - some string of text thats considered a unit (between whitespaces)
+
+Declaring variables - String word;
+
+Initializing variables - Put the 1st value into it (word = "Hello)
+
+Assign(ment) - putting the value into the variable; typically when the value of the       variable is changed after the initialization
+
+Constant variable - value can't change
+
+Statement - a line of code ended by a semi-colon
+
+Expression - a chunk of code that produces a value
+
+Casting - Implicit when you don't have to specify the change of the data type
+               Explicit when you have to specify data type (i.e. (int))
+
+break - immediately breaks from the block of code you're in (loop)
+continue - proceed to end of closest loop
+
+Concatenate - to join a string with another string or data type, use a plus sign (+). Whenever possible, Java automatically converts the data type and joins it with the string.
+
+Immutable - Cannot be changed
+
+Instance - Student firstStudent = new Student();
+
+Fields (Instance Variables) - public, private, protected, package-protected (you can use it if in same folder) DEFAULT
+
+Instance Variable - Variables for the instance of a class (primarily used) class Instance.variable name - belongs to class, but not in a method
+
+Instance Methods -  are associated with the objects, and as the name implies, can use instance variables
+
+Static method -  One rule-of-thumb: ask yourself "does it make sense to call this method, even if no Obj has been constructed yet?" If so, it should definitely be static.
+So in a class Car you might have a method double convertMpgToKpl(double mpg) which would be static, because one might want to know what 35mpg converts to, even if nobody has ever built a Car. But void setMileage(double mpg) (which sets the efficiency of one particular Car) can't be static since it's inconceivable to call the method before any Car has been constructed.
+
+Class Variable - (static) Class.variable name; static - doesn't require an instance
+
+Collection - Similar to an array ... an object that can hold one or more elements; classes available from the Java API
+
+Generics - specifications of the element type for a collection
+
+Primitive types - int, doubles, boolean, longs, shorts
+
+<b>Object-Oriented Programming</b>
+
+	* Abstraction - taking a complex thing and perceiving it as something simple
+	* Encapsulation - classes, methods & variables (Student class combines all features in one object) - Wrapping related functionality and data together in one unit
+	* Inheritance - A class acquiring properties and behaviors of parent class; provides code reusability
+	* Polymorphism - the same task can be done in different ways depending on the object's type.; also the ability of an object to take on many forms (Person: Employee, Student)
+
+
+Protected - some classes have access, but not all classes; specifically only classes that extend the super class; as well as classes within the same package
+Default - only other classes that are in the exact same package
+
+Final - In a method cannot be overwritten; in a variable cannot be changed; in a class cannot be inherited
+
+Abstract - (class or method) - can be inherited by other classes, but not used to create an actual object; used for vanilla parent classes
+
+Test Driven Development (TDD): Think about all test case scenarios; Write them out; Translate into code (@Test public void)Implementation; run tests; refactor
+     Test Case - one expectation of your application/module (setup/execute/verify)
+When_Expect_ (template for test methods)
+
+<b>Interfaces</b> - WHAT: only has abstract instance methods AND static constants; cannot be instantiated; a class can implement any number of interfaces (multiple inheritance); the class MUST implement all methods of the interface; WHY: multiple inheritance: a class can implement multiple; a contract ... the class is guaranteed to have certain methods
+
+<b>Exceptions:</b> Checked Exceptions - you must catch (i.e. IOExceptions); Unchecked Exceptions - java doesn't care if you catch or not (i.e. InputMismatch)
+
+Threads - 
+
+<b>CSS Selector</b> -  The selector instructs the browser to search the page for any HTML element that matches the given criteria. It applies any applicable declarations to that element
+		
+		</pre>
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+</html>
