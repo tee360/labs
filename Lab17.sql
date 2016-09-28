@@ -5,9 +5,9 @@ SELECT * FROM northwind.customers;
 SELECT DISTINCT
 country_region FROM customers;
 
---#3
+--#3 Get all the records from the table Customers where the customer’s last name starts with “B”.
 SELECT * FROM northwind.customers
-WHERE last_name >= 'Bl';
+WHERE last_name LIKE 'B%';
 
 --#4
 SELECT * FROM northwind.orders
@@ -70,6 +70,19 @@ SELECT id, customer_id FROM northwind.orders
 WHERE id = 65;
 
 --#14 Hint: this is three separate queries.
+SELECT *
+FROM orders
+JOIN customers;
+
+SELECT orders.id, customers.last_name
+FROM customers
+LEFT JOIN orders
+ON orders.customer_id = customers.id;
+
+SELECT orders.id, customers.last_name
+FROM orders
+LEFT JOIN customers
+ON orders.customer_id = customers.id;
 
 --#15 Get employees’ firstname for all employees who have NO (i.e. NULL) notes.
 
