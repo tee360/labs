@@ -66,7 +66,8 @@ FROM order_details
 group by order_id;
 
 --#13 Find the CustomerID that placed order id 65
-
+SELECT id, customer_id FROM northwind.orders
+WHERE id = 65;
 
 --#14 Hint: this is three separate queries.
 
