@@ -72,7 +72,8 @@ WHERE id = 65;
 --#14 Hint: this is three separate queries.
 SELECT *
 FROM orders
-JOIN customers;
+JOIN customers
+ON orders.customer_ID = customers.id;
 
 SELECT orders.id, customers.last_name
 FROM customers
@@ -85,10 +86,15 @@ LEFT JOIN customers
 ON orders.customer_id = customers.id;
 
 --#15 Get employees’ firstname for all employees who have NO (i.e. NULL) notes.
-
+SELECT employees.first_name
+FROM employees
+WHERE employees.notes IS NULL;
 
 --#16 Get ship city for all orders for which the customer’s first name is Francisco
-
+SELECT ship_city
+FROM orders O INNER JOIN Customers C 
+ON o.customer_id = c.id
+WHERE first_name = 'Francisco';
 
 --#17
 
