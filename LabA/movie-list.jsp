@@ -32,15 +32,11 @@
 		<tr>
 			<td><a href="<c:url value="/movies/${movie.id}"/>">${ movie.title }</a></td>
 			<td>${ movie.category }</td>
-			<td><c:choose>
-  					<c:when test="${ movie.isBlackAndWhite  }">
-  						&#10004
-  						<br />
-  					</c:when>
-  					<c:otherwise>							
-							<br />
-					</c:otherwise>
-				</c:choose>
+			<td>
+				<c:if test="${ movie.isBlackAndWhite }">
+  					&#10004;
+  					<br />
+  				</c:if>			
 			</td>
 			<td>${ movie.getOrigin() }</td>
 		</tr>

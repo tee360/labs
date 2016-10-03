@@ -3,7 +3,6 @@
  * All rights reserved
  */
 package LabA;
-
 /**
  * Responsibility: Hold information about any ONE movie.
  */
